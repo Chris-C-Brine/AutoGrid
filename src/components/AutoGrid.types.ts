@@ -4,11 +4,12 @@ import {ReactNode} from "react";
 /**
  * Props for the AutoGrid component
  */
-export type AutoGridProps<COLUMNS extends number = 12> = Omit<GridProps, "container" | "children" | "columns"> & {
+export type AutoGridProps = Omit<GridProps, "container" | "children" | "columns"> & {
   /**
    * Array of React components to be arranged in the grid
    */
   components?: ReactNode[];
+
   /**
    * Sets the total column count in the underlying MUI Grid system.
    * Defaults to 12 to match standard MUI behavior.
@@ -16,15 +17,13 @@ export type AutoGridProps<COLUMNS extends number = 12> = Omit<GridProps, "contai
    * Used to validate and adjust columnCount and columnWidths if provided.
    * @default 12
    */
-  columns?: COLUMNS;
+  columns?: number;
 
   /**
    * Number of columns to display (cannot be more than `columns`)
    * Defaults to 1.
    */
-  columnCount?: COLUMNS extends 12
-    ? 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
-    : number;
+  columnCount?: number;
 
   /**
    * Alternative to columnCount, specifies the exact column widths (should sum to `columns`)

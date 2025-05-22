@@ -24,15 +24,6 @@ npm install @chris-c-brine/autogrid
 
 ---
 
-## Usage
-```tsx 
-import { AutoGrid } from "@chris-c-brine/autogrid";
-// Example component array const items = [[ ](), ,  ]; 
-export default function Demo() { return (  ); }
-```
-
----
-
 ## Props
 
 | Prop           | Type                      | Default | Description                                                                                                             |
@@ -46,30 +37,39 @@ export default function Demo() { return (  ); }
 ---
 
 ## Examples
+```tsx
+import { AutoGrid } from "@chris-c-brine/autogrid";
+import { TextField } from "@mui/material";
+const fields = [
+  <TextField label="First Name" />,
+  <TextField label="Last Name" />,
+  <TextField label="Email" />
+];
+```
 
 ### Three Equal Columns
 ```tsx 
-<AutoGrid columnCount={3} components={[[ ](), ,  ]} />
+<AutoGrid columnCount={3} components={fields} />;
 ```
 
 ### Custom Column Widths
 ```tsx 
-<AutoGrid columnWidths={[6, 3, 3]} components={[[ ](), ,  ]} /> // Layout: 6/ 12 (A), 3/ 12 (B), 3/ 12 (C)
+<AutoGrid columnWidths={[6, 3, 3]} components={fields} /> // Layout: 6/ 12 (A), 3/ 12 (B), 3/ 12 (C)
 ```
 
 ### One Full-Width Row (Default)
 ```tsx 
-<AutoGrid components={[[ ]()]} />
+<AutoGrid components={fields} />
 ```
 
 ### Custom Grid System (16 Columns)
 ```tsx 
-<AutoGrid columns={16} columnCount={4} components={[[ ](), ,  ,  ]} /> // Each column will be 4/ 16 units wide
+<AutoGrid columns={16} columnCount={4} components={fields} /> // Each column will be 4/ 16 units wide
 ```
 
 ### Custom Breakpoint Example
 ```tsx 
-<AutoGrid columns={8} columnWidths={[2, 3, 3]} components={[ ,  ,  ]} /> // Two columns 3/ 8 wide, one 2/ 8 wide
+<AutoGrid columns={8} columnWidths={[2, 3, 3]} components={fields} /> // Two columns 3/ 8 wide, one 2/ 8 wide
 ```
 
 ---

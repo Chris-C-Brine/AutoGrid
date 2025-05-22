@@ -7,7 +7,7 @@ import {AutoGridProps} from "./AutoGrid.types";
  * It arranges an array of child components according to column configuration,
  * supporting both equal-width columns and custom column widths.
  */
-export const AutoGrid: FC<AutoGridProps> = ({ components, columnWidths, columnCount, columns=12, ...props }) => {
+export const AutoGrid: FC<AutoGridProps> = ({ components, columnWidths, columnCount, columns = 12, ...props }) => {
   // Select column sizes logic
   let columnSizes: number[] = [];
 
