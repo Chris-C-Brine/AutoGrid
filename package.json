@@ -1,6 +1,6 @@
 {
   "name": "@chris-c-brine/autogrid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "description": "A responsive MUI grid component ",
   "main": "dist/index.js",
@@ -22,7 +22,9 @@
     "Grid"
   ],
   "peerDependencies": {
-    "@mui/material": "^7.1.0"
+    "@mui/material": "^7.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@emotion/react": "^11.14.0",

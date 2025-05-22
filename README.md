@@ -1,4 +1,4 @@
-# AutoGrid
+# @Chris-C-Brine/AutoGrid
 A responsive MUI grid component
 
 **AutoGrid** is a flexible, responsive grid component for [Material UI](https://mui.com/material-ui/react-grid/), based on the `Grid` system. It streamlines dynamic layouts in React by letting you specify either a column count (for equal-width columns) or exact column widths, all while leveraging the power and theme integration of MUI.
