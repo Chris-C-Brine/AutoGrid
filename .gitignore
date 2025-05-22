@@ -1,41 +1,3 @@
-# Build outputs
-/dist
-/build
-/lib
-/es
-/umd
-/cjs
-/esm
-
-# Dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# Testing
-/coverage
-/.nyc_output
-*.lcov
-
-# TypeScript
-*.tsbuildinfo
-next-env.d.ts
-
-# Editor directories and files
-.idea/
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-.DS_Store
-.vim
-
 # Logs
 logs
 *.log
@@ -140,7 +102,6 @@ dist
 
 # vuepress v2.x temp and cache directory
 .temp
-.cache
 
 # vitepress build output
 **/.vitepress/dist
@@ -172,46 +133,49 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
-# Package manager files
-npm-debug.log
-yarn-error.log
-yarn-debug.log
-.yarn-integrity
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
 
-# Cache
-.npm
-.eslintcache
-.stylelintcache
-.cache
-.parcel-cache
+# Build outputs
+/dist
+/build
+/lib
+/es
+/umd
+/cjs
+/esm
 
-# Storybook
-/storybook-static
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Docusaurus
-.docusaurus
-.cache-loader
 
-# macOS
+# Testing
+/coverage
+/.nyc_output
+
+
+# TypeScript cache
+
+next-env.d.ts
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+.vim
+
+# Miscellaneous output
+.storybook-static
+# OS/IDE
 .AppleDouble
 .LSOverride
 ._*
-
-# Windows
 Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
@@ -223,4 +187,6 @@ ehthumbs_vista.db
 *.tmp
 *.swp
 *.swo
-*.tgz
+
+# Uncomment if using Gatsby
+# public

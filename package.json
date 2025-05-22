@@ -1,6 +1,7 @@
 {
   "name": "@chris-c-brine/autogrid",
   "version": "1.0.0",
+  "type": "module",
   "description": "A responsive MUI grid component ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
