@@ -1,4 +1,7 @@
 # @Chris-C-Brine/AutoGrid
+[![npm version](https://img.shields.io/npm/v/@chris-c-brine/autogrid.svg)](https://www.npmjs.com/package/@chris-c-brine/autogrid)
+[![License: AAL](https://img.shields.io/badge/License-AAL-blue.svg)](https://github.com/Chris-C-Brine/autogrid/blob/main/LICENSE)
+
 A responsive MUI grid component
 
 **AutoGrid** is a flexible, responsive grid component for [Material UI](https://mui.com/material-ui/react-grid/), based on the `Grid` system. It streamlines dynamic layouts in React by letting you specify either a column count (for equal-width columns) or exact column widths, all while leveraging the power and theme integration of MUI.
@@ -17,10 +20,15 @@ A responsive MUI grid component
 ## Installation
 
 ```bash
-npm install @chris-c-brine/autogrid
+  npm install @chris-c-brine/autogrid
 ```
-> **Peer Dependency:**  
-> You must use `@mui/material` version 7.x as a peer dependency.
+
+### Peer Dependencies
+This package requires the following peer dependencies:
+
+```shell script
+  npm install react react-dom @mui/material
+```
 
 ---
 
@@ -84,4 +92,4 @@ const fields = [
 
 ## License
 
-[ISC](LICENSE) © Christopher Brine
+[AAL](LICENSE) © Christopher C. Brine
