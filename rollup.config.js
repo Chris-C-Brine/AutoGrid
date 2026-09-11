@@ -2,6 +2,7 @@ import typescript from '@rollup/plugin-typescript';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import { copyFileSync } from 'fs';
 
 export default {
     input: 'src/index.ts',
@@ -21,6 +22,12 @@ export default {
         peerDepsExternal(),
         resolve(),
         commonjs(),
+        {
+            name: 'copy-license',
+            writeBundle() {
+                copyFileSync('LICENSE', 'dist/LICENSE');
+            }
+        },
         typescript({
             tsconfig: './tsconfig.json',
             declaration: true,
