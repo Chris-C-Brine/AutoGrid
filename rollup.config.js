@@ -25,7 +25,9 @@ export default {
             tsconfig: './tsconfig.json',
             declaration: true,
             declarationDir: 'dist',
+            declarationMap: true,
             sourceMap: true,
+            inlineSources: true,
             noEmitOnError: false // Allow build to continue with errors
         })
     ],
